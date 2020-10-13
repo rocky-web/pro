@@ -1,3 +1,3 @@
 ruta git:
 
-cd C:/Users/pipe/Desktop/misitio
+cd C:/xampp/htdocs/pipe/misitio
