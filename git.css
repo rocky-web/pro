@@ -1,0 +1,50 @@
+pre{
+	font-size: 13px !important;
+	padding: 0px !important;
+	margin-right: 30px !important;
+	margin-left: 30px !important;
+	background-color: black;
+	color: white;
+}
+.padre h2, h3, p{
+	margin-right: 30px;
+	margin-left: 30px;
+	font-family: arial;
+}
+.seccion1{
+	padding-top: 60px;
+	padding-left: 410px;
+	padding-bottom: 2px;
+	/*background-color: blue;*/
+}
+.seccion2{
+	padding-top: 60px;
+	padding-bottom: 2px;
+	/*background-color: green;*/
+	padding-left: 410px;
+}
+.seccion3{
+	padding-top: 60px;
+	padding-left: 410px;
+	padding-bottom: 2px;
+	/*background-color: red;*/
+}
+.seccion4{
+	padding-top: 60px;
+	padding-left: 410px;
+	padding-bottom: 2px;
+	/*background-color: yellow;*/
+}
+
+.comentario{
+	color: #A09D9D;
+}
+.commit {
+	color: #F5E138;
+}
+.head{
+	color: #34E8C8;
+}
+.master{
+	color: #52D519;
+}
