@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+	
+	<button id="boton" onclick="function_caja()">Ocultar</button>
+	<div id="caja"><h3>hola mundo</h3></div>
+
+	<script type="text/javascript">
+		var clic = 0;
+
+		function function_caja() {	
+			if (clic == 0) {
+				document.getElementById("caja").style.display = 'none';
+				document.getElementById("boton").innerHTML = "Mostrar";
+				clic = clic + 1;
+			}else{
+				document.getElementById("caja").style.display = 'block';
+				document.getElementById("boton").innerHTML = "Ocultar";
+				clic = 0;
+			}
+		}
+		 
+
+	</script>
+
+</body>
+</html>

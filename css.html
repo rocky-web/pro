@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<link rel="stylesheet" type="text/css" href="prism.css">
+	<link rel="stylesheet" type="text/css" href="general.css">
+	<link rel="stylesheet" type="text/css" href="secciones.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="prism.js"></script>
+	<script>
+		$(document).ready(function(){
+		    $("#traer-pagina-externa").load("nav-horizontal.html");
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="traer-pagina-externa"></div>
+<div class="navbar-vertical">
+	<ul>
+		<a href="#seccion1"><li>menu 1</li></a>
+		<a href="#seccion2"><li>menu 2</li></a>
+		<a href="#seccion3"><li>menu 3</li></a>
+	</ul>
+</div>
+
+<div class="padre">
+<div class="seccion1" id="seccion1">
+	<h2>Trucos CSS necesarios</h2>
+	<span class="style-span">ejemplo test CSS</span>
+
+<pre>
+<code class="language-css">
+	.estiulo{
+		background-color: red;
+
+	}
+	body{
+		color: blue;
+	}
+</code>
+</pre>
+
+</div>
+
+<div class="seccion2" id="seccion2">
+	<span class="style-span">test</span>
+
+</div>
+
+<div class="seccion3" id="seccion3">
+	
+</div>
+	
+</div>
+
+<div class="seccion4" id="seccion4">
+	gsfdgsdfg
+</div>
+</div>
+
+</body>
+</html>

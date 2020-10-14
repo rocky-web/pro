@@ -67,3 +67,7 @@ pre{
 .navbar-vertical a:hover{
 	color: orange;
 }
+.boton-demo button{
+	margin-left: 30px;
+	cursor: pointer;
+}
