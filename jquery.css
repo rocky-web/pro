@@ -1,0 +1,61 @@
+pre{
+	font-size: 13px !important;
+	padding: 0px !important;
+	margin-right: 30px !important;
+	margin-left: 30px !important;
+}
+.padre h2, h3, p{
+	margin-right: 30px;
+	margin-left: 30px;
+	font-family: arial;
+}
+.seccion1{
+	padding-top: 60px;
+	padding-left: 410px;
+	padding-bottom: 2px;
+	/*background-color: blue;*/
+}
+.seccion2{
+	padding-top: 60px;
+	padding-bottom: 2px;
+	/*background-color: green;*/
+	padding-left: 410px;
+}
+.seccion3{
+	padding-top: 60px;
+	padding-left: 410px;
+	padding-bottom: 2px;
+	/*background-color: red;*/
+}
+.seccion4{
+	padding-top: 60px;
+	padding-left: 410px;
+	padding-bottom: 2px;
+	/*background-color: yellow;*/
+}
+
+.navbar-vertical{
+	position: fixed;
+	width: 30%;
+	height: 2000px;
+	padding-top: 100px;
+	float: left;
+	z-index: 1;
+}
+
+.navbar-vertical ul{
+	margin-left: -20px;
+}
+
+.navbar-vertical li{
+	font-family: calibri;
+	font-size: 17px;
+	margin-left: 10px;
+}
+.navbar-vertical a{
+	color: black;
+ 	text-decoration: none;
+}
+.navbar-vertical a:hover{
+	color: orange;
+}

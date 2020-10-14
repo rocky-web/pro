@@ -4,7 +4,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="prism.css">
 	<link rel="stylesheet" type="text/css" href="general.css">
-	<link rel="stylesheet" type="text/css" href="html5.css">
+	<link rel="stylesheet" type="text/css" href="jquery.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="prism.js"></script>
 	<script>
@@ -19,35 +19,29 @@
 <div id="traer-pagina-externa"></div>
 <div class="navbar-vertical">
 	<ul>
-		<a href="#seccion1"><li>menu 1</li></a>
-		<a href="#seccion2"><li>menu 2</li></a>
-		<a href="#seccion3"><li>menu 3</li></a>
+		<a href="#seccion1"><li>Cargar pagina web externa</li></a>
+		<a href="#seccion2"><li>menu 2 jquery</li></a>
+		<a href="#seccion3"><li>menu 3 jquery</li></a>
 	</ul>
 </div>
 
 <div class="padre">
 <div class="seccion1" id="seccion1">
-	<h2>Trucos HTML5 necesarios</h2>
-	<h3>fdjgjdjfgljdlf</h3>
+	<h2>Trucos Jquery necesarios</h2>
+	<h4>Cargar pagina web externa</h4>
 
-<pre>
-<code class="language-html">
-	&lt;!-- Lenguaje HTML --&gt;
-	&lt;ul&gt;
-		&lt;li&gt;Item 1 &lt;b&gt;Se muestra el código&lt;/b&gt;&lt;/li&gt;
-		&lt;li&gt;Item 2 &lt;i&gt;HTML como código&lt;/i&gt;&lt;/li&gt;
-		&lt;li&gt;Item 3&lt;/li&gt;
-	&lt;/ul&gt;
-</code>
-</pre>
-
-<p>Supongamos que realice cambios en varios archivos pero quiero saber las modificaciones de codigo de solo uno</p>
+<p>traer pagina web externa (se debe estar en un servidor local o web)</p>
 
 <pre>
 <code class="language-javascript">
+	// traer web externa
   	$(document).ready(function(){
-		    $("#traer-pagina-externa").load("nav-horizontal.html");
-		});
+	    $("#nombre-de-div").load("nombre-pagina.html");
+	});
+</code>
+<code class="language-html">
+	&lt;!-- en este div se cargara la pagina --&gt;
+	&lt;div id="nombre-de-div"&gt;&lt;/div&gt;
 </code>
 </pre>
 
