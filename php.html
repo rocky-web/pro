@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<link rel="stylesheet" type="text/css" href="prism.css">
+	<link rel="stylesheet" type="text/css" href="general.css">
+	<link rel="stylesheet" type="text/css" href="secciones.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="prism.js"></script>
+	<script>
+		$(document).ready(function(){
+		    $("#traer-pagina-externa").load("nav-horizontal.html");
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="traer-pagina-externa"></div>
+<div class="navbar-vertical">
+	<ul>
+		<a href="#seccion1"><li>cargar web externa</li></a>
+		<a href="#seccion2"><li>menu 2 php</li></a>
+		<a href="#seccion3"><li>menu 3 php</li></a>
+	</ul>
+</div>
+
+<div class="padre">
+<div class="seccion1" id="seccion1">
+	<h2>Trucos PHP necesarios</h2>
+	<span class="style-span">cargar web externa</span>
+
+<pre>
+<code class="language-php">
+	&lt;?php
+		// Traer pagina web externa con PHP 
+		include ('pag-externa.html');
+	?&gt;
+</code>
+</pre>
+
+</div>
+
+<div class="seccion2" id="seccion2">
+<h3>consultar solo los ultimos commit</h3>
+<p>donde -3 indica la cantidad de lineas a mostrar</p>
+<pre>
+<code>
+	<span class="comentario">// consultar solo los ultimos commit</span>
+	git log --oneline -3
+</code>
+</pre>
+
+</div>
+
+<div class="seccion3" id="seccion3">
+	
+</div>
+	
+</div>
+
+<div class="seccion4" id="seccion4">
+	gsfdgsdfg
+</div>
+</div>
+
+</body>
+</html>
