@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="prism.css">
 	<link rel="stylesheet" type="text/css" href="general.css">
 	<link rel="stylesheet" type="text/css" href="secciones.css">
-	<link rel="stylesheet" type="text/css" href="git.css">
+	<!-- <link rel="stylesheet" type="text/css" href="git.css"> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="prism.js"></script>
 	<script>
@@ -20,8 +20,8 @@
 <div id="traer-pagina-externa"></div>
 <div class="navbar-vertical">
 	<ul>
-		<a href="#seccion1"><li>Ver modificaciones de codigo</li></a>
-		<a href="#seccion2"><li>consultar solo los ultimos commit</li></a>
+		<a href="#seccion1"><li>Trucos GIT LOG</li></a>
+		<a href="#seccion2"><li>Trucos GIT DIFF</li></a>
 		<a href="#seccion3"><li>menu 3</li></a>
 	</ul>
 </div>
@@ -29,67 +29,60 @@
 <div class="padre">
 <div class="seccion1" id="seccion1">
 	<h2>Trucos GIT necesarios</h2>
-	<span class="style-span">Ver modificaciones de codigo</span>
+	<span class="style-span">Algunos Comandos GIT LOG</span>
 	
-
 <pre>
-<code>
-	<span class="comentario">// ver los cambios del codigo antes de hacer commit</span>
+<code class="language-php">
+	// Listar todos los commit realizados
+ 	git log
+</code>
+<code class="language-php">
+	// Listar todos los commit realizados en 1 sola linea
+	git log --oneline
+</code>
+<code class="language-php">
+	// Listar todos los commit realizados en 1 sola linea y ademas mostrar los nombres de archivos 
+	// modificados en el commit con --name-only. Con -5 decimos que muestre solo las 5 ultimas lineas
+	git log --oneline --name-only -5 
+</code>
+<code class="language-php">
+	// Saber que nombres de archivos se editaron en commit especifico
+	git log --name-only c4a087a
+</code>
+</pre>
+<span class="style-span">Algunos Comandos GIT DIFF</span>
+<pre>
+<code class="language-php">
+	// ver los cambios del codigo del ultimo commit
 	git diff
 </code>
-</pre>
-
-<p>Supongamos que realice cambios en varios archivos pero quiero saber las modificaciones de codigo de solo uno</p>
-
-<pre>
-<code>
-  	<span class="comentario">// ver los cambios del codigo de un commit</span>
-  	git diff numero-de-commit
+<code class="language-php">
+  	// ver los cambios del codigo de un commit especificado hasta el ultimo commit guardado</span>
+  	git diff mi-commit
+</code>
+<code class="language-php">
+	// ver los cambios del codigo de un archivo desde el commit seleccionado hasta el ultimo commit</span>
+	git diff c4a087a 'ruta git.txt'
+</code>
+<code class="language-php">
+	// Listar los nombres de archivos que se modificaron desde el commit especificado hasta el ultimo commit
+	git diff --name-only c939d35
 </code>
 </pre>
-
-<pre>
-<code>
-	<span class="comentario">// ver los cambios del codigo de un archivo</span>
-	 git diff c4a087a 'ruta git.txt'
-</code>
-</pre>
-<pre>
-<code>
-	<span class="comentario">// Saber que nombres de archivos se editaron</span>
-	 git log --name-only 
-</code>
-</pre>
-
-<pre>
-<code>
-	<span class="comentario">// Saber que nombres de archivos se editaron en commit especifico</span>
-	 git log --name-only c4a087a
-</code>
-</pre>
-
 </div>
 
 <div class="seccion2" id="seccion2">
-<h3>consultar solo los ultimos commit</h3>
-<p>donde -3 indica la cantidad de lineas a mostrar</p>
-<pre>
-<code>
-	<span class="comentario">// consultar solo los ultimos commit</span>
-	git log --oneline -3
-</code>
-</pre>
 
 </div>
 
 <div class="seccion3" id="seccion3">
-	
+
 </div>
 	
 </div>
 
 <div class="seccion4" id="seccion4">
-	gsfdgsdfg
+	
 </div>
 </div>
 

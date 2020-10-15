@@ -1,10 +1,21 @@
-pre{
-	background-color: black;
-	color: white;
-}
+/*pre{*/
+	/*background-color: black;*/
+	/*color: white;*/
+	/*width: 700px;*/
+	/*white-space: normal; */
+	/*padding-right: 500px;*/
+	/*word-wrap: break-word;*/
+
+/*}*/
+/*code{
+	padding-left: 1550px;
+	margin-left: 1500px;
+}*/	
+
 
 .comentario{
-	color: #A09D9D;
+	color: #A09D9D !important;
+	/*padding-right: 1100px;*/
 }
 .commit {
 	color: #F5E138;
