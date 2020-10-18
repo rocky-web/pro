@@ -28,7 +28,7 @@
 <div class="padre">
 <div class="seccion1" id="seccion1">
 	<h2>Trucos Jquery necesarios</h2>
-	<span class="style-span">Cargar pagina web externa</span>
+	<span class="style-span">Cargar pagina web externa (AJAX)</span>
 <p>traer pagina web externa (se debe estar en un servidor local o web)</p>
 
 <pre>
@@ -37,60 +37,43 @@
   	$(document).ready(function(){
 	    $("#nombre-de-div").load("nombre-pagina.html");
 	});
-</code>
-<code class="language-html">
+</code><code class="language-html">
 	&lt;!-- en este div se cargara la pagina --&gt;
 	&lt;div id="nombre-de-div"&gt;&lt;/div&gt;
 </code>
 </pre>
-
+<p>Cargar contenido externo con un (button)</p>
 <pre>
-<code class="language-git">
-	$ git log --oneline -5
-81a652d (HEAD -> main) commit 12
-ad656d3 commit 11
-65177fb commit 10
-a55540d commit 9
-eaab8a5 (origin/main) commit 8
-
+<code class="language-html">
+	&lt;script&gt;
+	// cargar contenido externo con un (button)
+	$(document).ready(function(){
+	  $("button").click(function(){
+	    $("#div1").load("demo_test.txt");
+	  });
+	});
+	&lt;/script&gt;
+	&lt;body&gt;
+		&lt;button&gt;boton&lt;/button&gt;
+		&lt;!-- en este div se cargara la pagina --&gt;
+		&lt;div id="div1"&gt;&lt;/div&gt;
+	&lt;/body&gt;
 </code>
 </pre>
-<pre>
-<code>
-	<span class="comentario">// Saber que nombres de archivos se editaron</span>
-	 git log --name-only 
-</code>
-</pre>
-
-<pre>
-<code>
-	<span class="comentario">// Saber que nombres de archivos se editaron en commit especifico</span>
-	 git log --name-only c4a087a
-</code>
-</pre>
-
+<div class="boton-demo">
+	<a href="demos/jquery/demo2/demo2.html" target="_blank"><button>Ver Demo</button></a>
 </div>
 
 <div class="seccion2" id="seccion2">
-<h3>consultar solo los ultimos commit</h3>
-<p>donde -3 indica la cantidad de lineas a mostrar</p>
-<pre>
-<code>
-	<span class="comentario">// consultar solo los ultimos commit</span>
-	git log --oneline -3
-</code>
-</pre>
 
 </div>
 
 <div class="seccion3" id="seccion3">
 	
 </div>
-	
-</div>
 
 <div class="seccion4" id="seccion4">
-	gsfdgsdfg
+	
 </div>
 </div>
 
