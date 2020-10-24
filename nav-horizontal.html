@@ -1,39 +1,50 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Meta para adaptar a telefonos -->
 <style type="text/css">
-.navbar-horizontal{
-	position: fixed;
-	top: 0px;
-	background-color: lightblue;
-	height: 60px;
-	width: 100%;
-	z-index: 2;
-}
-.navbar-horizontal ul{
-	font-size: 20px;
-	font-weight: bold;
-	color: blue;
-}	
-.navbar-horizontal li{
-	float: left;
-	margin-right: 25px;
-	list-style: none;
-}
-.navbar-horizontal a{
-	color: black;	
-}
-.navbar-horizontal a:hover{
-	color: orange;
-}
-.enlaces{
-	float: right;
-	margin-right: 50px;
-}
+
+	.navbar-horizontal-phone{
+		display: none;
+	}	
+	.navbar-horizontal{
+		position: fixed;
+		top: 0px;
+		background-color: lightblue;
+		height: 60px;
+		width: 100%;
+		z-index: 2;
+	}
+	.navbar-horizontal ul{
+		font-size: 20px;
+		font-weight: bold;
+		color: blue;
+	}	
+	.navbar-horizontal li{
+		float: left;
+		margin-right: 25px;
+		list-style: none;
+	}
+	.navbar-horizontal a{
+		color: black;	
+	}
+	.navbar-horizontal a:hover{
+		color: orange;
+	}
+	.enlaces{
+		float: right;
+		margin-right: 50px;
+	}
 
 /*Telefonos*/
 @media only screen and (max-width: 768px) {
 	.navbar-horizontal{
 		display: none;
+	}
+	.navbar-horizontal-phone{
+		display: block;
+	}
+	.enlaces{
+		float: initial;
+		margin-right: initial;
 	}
 }
 
