@@ -1,4 +1,5 @@
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Meta para adaptar a telefonos -->
 <style type="text/css">
 .navbar-horizontal{
 	position: fixed;
@@ -29,9 +30,28 @@
 	margin-right: 50px;
 }
 
+/*Telefonos*/
+@media only screen and (max-width: 768px) {
+	.navbar-horizontal{
+		display: none;
+	}
+}
+
 </style>
 
 <div class="navbar-horizontal">
+<ul>
+	<a href="html5.html"><li>HTML5</li></a>
+	<a href="css.html"><li>CSS</li></a>
+	<a href="javascript.html"><li>Javascript</li></a>
+	<a href="php.html"><li>PHP</li></a>
+	<a href="jquery.html"><li>JQuery</li></a>
+	<a href="git.html"><li>GIT</li></a>
+	<a href="" class="enlaces"><li>Enlaces necesarios</li></a>
+</ul>	
+</div>
+
+<div class="navbar-horizontal-phone">
 <ul>
 	<a href="html5.html"><li>HTML5</li></a>
 	<a href="css.html"><li>CSS</li></a>
